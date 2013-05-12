@@ -1,0 +1,211 @@
+
+body{
+	background-image: url(/images/Template/background.jpg);
+	font-family: "Trebuchet MS";
+	font-size: 1,6em;
+	text-align: justify;
+}	
+
+/*Блок включает header, content, footer*/
+#content{
+	width: 928px;
+	background-image: url(/images/Template/container-bg.gif);
+	background-repeat:  repeat-y;
+	padding: 0px;
+}
+
+/*Названия статей*/
+h1, h2{
+	text-align:center;
+}
+
+a{
+	display: inline-block;
+	color: #ff7f50;
+	/*задержка преобразования - 0,25секунд*/
+	transform-duration: 0.25s;
+	-webkit-transform-duration: 0.25s;
+	-o-transform-duration: 0.25s;
+	-moz-transform-uration: 0.25s;
+	-ms-transform-duration: 0.25s;
+	/*вид преобразования - трансформация*/
+	transform-property: transform;
+	-webkit-transform-property: -webkit-transform;
+	-o-transform-property: -o-transform;
+	-moz-transform-property: -moz-transform;
+	-ms-transform-property: -ms-transform;
+	/*трансформация. Scale - растяжение, Rotate - поворот*/
+	transform: scale(1) rotate(0);
+	-webkit-transform: scale(1) rotate(0);
+	-o-transform: scale(1) rotate(0);
+	-moz-transform: scale(1) rotate(0);
+	-ms-transform: scale(1) rotate(0);
+}
+
+a:hover {
+ color:#333;
+ text-shadow:0 1px 0 #0f9fff;
+ display:inline-block;
+ background:#006fdd;
+ padding:2px 5px 2px 5px;
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px;
+ -o-border-radius:4px;
+ -ms-border-radius:4px;
+ border-radius: 4px;
+ -webkit-transform: scale(1.05) rotate(-1deg);
+ -moz-transform: scale(1.05) rotate(-1deg);
+ -o-transform: scale(1.05) rotate(-1deg);
+ -ms-transform:scale(1.05) rotate(-1deg);
+ transform: scale(1.05) rotate(-1deg);
+}
+
+
+/*Блок со всем основным контентом*/
+
+/*Выделение в рамку всей таблицы*/
+#mainTable{
+	//border: 1px solid black;
+}
+
+/*Выделение в рамку столбца*/
+#mainTable td{
+	//border: 1px solid black;
+}
+
+/*Вертикальное меню */
+#menu{
+	width:210px;
+	/border: 1px solid black;
+	vertical-align: top;
+}
+
+/*Строки вертикального меню */
+#menu div{
+	text-align: center;
+	/border: 1px solid black;
+	padding: 10px 0 10px 0;
+	font-family: "Trebuchet MS";
+	font-size: 1,6em;
+	color: #ff7f50;
+}
+
+/*Блок для background-image - кольца блокнота - не отображен в основном шаблоне*/
+#center{
+	background-image: url(/images/Template/divider-bg.jpg);
+	background-repeat: repeat-y;
+}
+
+/*Название сайта*/
+#siteName{
+	position: relative;
+	top: -400px;
+	left: +100px;
+	color: white;
+	font-size: 2em;
+}
+
+#siteName2{
+	position: relative;
+	top: -400px;
+	left: +325px;
+	color: white;
+	font-size: 2em;
+}
+/*Блок для статей*/
+#cont{
+	padding: 30px;
+	width: 600px;
+}
+
+/*Оформление фотографий*/
+#content table img{
+	margin: 20px 20px 30px 0;
+	border: 1px solid #ff7f50;
+	padding: 33px;
+	/background-color: #ff8800;
+	//opacity: 0.5;
+	//z-index: +2;
+	//background: #ffefd5;
+	//background-image: url(/images/Template/container-bg.gif);	
+}
+
+/*Блоки статей V_View*/
+.articles{
+	width: 600px;
+	padding: 30px;
+}
+
+/*Блок текста статьи внутри блока articles V_View*/
+#text{
+	width: 600px;
+}
+
+/*Div, в котором находится увеличенное изображение выбранной статьи V_Select*/
+.picture{
+	margin-left: 20px;
+}
+
+/*Блок текста выбранной статьи V_Select*/
+#selectedArt{
+	clear:both;
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+/*Блок для оставления комментария*/
+#leaveComm{
+	padding: 20px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+/*Блоки, в которых отображаются комментарии*/
+.comment{
+	padding: 20px;
+	background-color: white;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+/*Галерея*/
+/*Контейнер для просмотра увеличенного изображения*/
+
+#Big{
+	margin: 0 20px 0 70px;
+	text-align: center;
+}
+
+#Big div{
+	height: 40px;
+	/background-color: #ff8800;
+	/opacity: 0.5;
+	margin: 0 20px 20px 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#Prev{
+	position: relative;
+	/top: -28px;
+	left: -100px;
+}
+
+#Next{
+	position: relative;
+	/top: -30px;
+	left: +50px;
+}
+
+/*About*/
+/*Контейнер для описания биографии*/
+#introduction{
+	margin: 20px;
+}
+
+footer{
+	width: 938px;
+}
